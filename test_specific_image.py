@@ -6,7 +6,7 @@ from tensorflow import keras
 model = keras.models.load_model("fine_tuned_vgg16_model.keras")
 
 # Load the image
-image_path = "Data\m340i.jpg"  # Replace with the actual path
+image_path = "Data\m340i-2024.jpg"  # Replace with the actual path
 img = cv2.imread(image_path)
 img = cv2.resize(img, (224, 224))
 img = img / 255.0
@@ -19,7 +19,7 @@ predictions = model.predict(img)
 predicted_class_index = np.argmax(predictions, axis=1)[0]
 
 # Get the manufacturer's class (replace with the actual class index)
-manufacturers_class = 4  # Example class index
+manufacturers_class = 4
 
 # Print the results
 if predicted_class_index == manufacturers_class:
