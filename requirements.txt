@@ -1,0 +1,8 @@
+tensorflow
+keras
+opencv-python
+pandas
+scikit-learn
+matplotlib
+plotly
+nbformat>=4.2.0
