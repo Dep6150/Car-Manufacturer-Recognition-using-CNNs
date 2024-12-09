@@ -6,7 +6,7 @@ from tensorflow import keras
 model = keras.models.load_model("fine_tuned_vgg16_model.keras")
 
 # Load the image
-image_path = "m340i.jpg"  # Replace with the actual path
+image_path = "Data\m340i.jpg"  # Replace with the actual path
 img = cv2.imread(image_path)
 img = cv2.resize(img, (224, 224))
 img = img / 255.0
