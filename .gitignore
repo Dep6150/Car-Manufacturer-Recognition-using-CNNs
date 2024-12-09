@@ -2,5 +2,5 @@ model_7.keras
 Data/x_test.npy
 Data/x_train.npy
 fine_tuned_vgg16_model.keras
-keras_tuner/Car-Manufacturer-Recognition-using-CNNs/trial_03/checkpoint.data-00000-of-00001
 fine_tuned_vgg16_model_from_guided.keras
+keras_tuner/*
